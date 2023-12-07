@@ -1,0 +1,242 @@
+@import url(setionone.css);
+@import url(section-two-three.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 900px;
+}
+
+.menu button{
+    display: none;
+}
+
+.cima{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(74, 72, 72);
+}
+
+header{
+    width: 100%;
+    height:70px;
+    background-color: rgb(15, 15, 15);
+    top: -10px;
+}
+
+.section-one,.section-two-three{
+    z-index: 2;
+}
+
+header h2{
+    font-size: 28px;
+}
+
+header{
+    display: flex;
+}
+
+header .globo{
+    display: none;
+}
+
+header h2{
+    padding: 20px 40px;
+    color:  rgb(197, 196, 196);
+}
+
+header nav ul{
+    display: flex;
+    padding-top: 17px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+header nav ul li{
+    list-style-type: none;
+    margin: 10px;
+    color:  rgb(197, 196, 196);
+    cursor: pointer;
+}
+
+header nav ul li:hover{
+    color: #f0f8ff;
+}
+
+header .header-icons{
+    width: 19%;
+    display: flex;
+    margin-top: 23px;
+    margin-left: 260px;
+
+}
+
+header .header-icons h3,.icon-1.icon-2{
+    margin-right: 7px;
+    margin-top: 3px;
+    font-size: 21px;
+    width: 80px;
+}
+
+.icon-1{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:  rgb(197, 196, 196);
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.ic1{
+    background-image: url('../Img/icon1.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.icon-2{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:  rgb(197, 196, 196);
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.ic2{
+    background-image: url('../Img/icon2.svg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-3{
+    width: 55px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:  rgb(197, 196, 196);
+}
+
+.perfil{
+    width: 27px;
+    height: 25px;
+    border-radius: 14px;
+    background-color: rgb(154, 150, 150);
+    margin-left: 2px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.icon3{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:  rgb(197, 196, 196);
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 0px;
+}
+
+
+.ic3{
+    background-image: url('../Img/icon3.svg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile{
+    background-color: #000000;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 97px;
+    left: 0;   
+    display: none;
+    height: auto;
+    z-index: 1;
+}
+
+.mobile nav a{
+    color: #f0f8ff;
+    font-size: 12pt;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.mobile nav a:hover{
+    background-color: #ff4500;
+}
+
+@media screen and (max-width: 1340px){
+    header{
+        margin-bottom: 200px;
+        height: auto;
+    }
+    
+    header .globo{
+        display: flex;
+        font-size: 23px;
+        color: #f0f8ff;
+        justify-content: center;
+        align-self: center;
+        padding-left: 530px;
+        padding-right: 30px;
+    }
+
+    .header-icons{
+        display: none;
+    }
+
+    header h2,.icon-1,.icon-2,.icon-3{
+        display: none;
+    }
+
+    header .menu-desktop nav ul{
+        display: none;
+    }
+
+    .menu {
+        width: 40px;
+        height: 40px;
+        border-radius: 15px;
+        background-color:  rgb(197, 196, 196);
+        margin-right: 10px;
+        cursor: pointer;
+        position: relative;
+        padding: 10px;
+        left: 10px;
+        top: 20px;
+    }
+    
+    .menu button{
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 4px solid #ccc;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        top: -7px;
+        left: -7px;
+    }
+
+    .menu img{
+        width: 25px;
+    }
+
+    .section-one{
+        z-index: 2;
+    }
+}
+
+
+
